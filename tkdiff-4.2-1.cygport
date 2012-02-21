@@ -1,0 +1,12 @@
+DESCRIPTION="Tk GUI frontend for diff(1)"
+HOMEPAGE="http://tkdiff.sourceforge.net/"
+SRC_URI="mirror://sourceforge/tkdiff/${P}.tar.gz"
+SRC_DIR="${PN}-unix"
+
+src_compile() { :; }
+
+src_install() {
+	cd ${S}
+	dobin tkdiff
+	dodoc *.txt
+}
